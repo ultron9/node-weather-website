@@ -12,7 +12,8 @@ const forecast = (lattitude, longitude, callback) => {
                 location:data.body.location.name,
                 temperature:data.body.current.temperature,
                 precipitation:data.body.current.precip,
-                forecast:data.body.current.weather_descriptions
+                forecast:data.body.current.weather_descriptions,
+                wind:data.body.current.wind_speed
             })
         }
     })
